@@ -1,5 +1,11 @@
 # array_merge_recursive replacement
 
+## Installation
+
+`composer require rikudou/array-merge-recursive`
+
+## Description
+
 The php function [`array_merge_recursive`](https://www.php.net/manual/en/function.array-merge-recursive.php)
 behaves a little confusingly and not at all like
 [`array_merge`](https://www.php.net/manual/en/function.array-merge.php).
