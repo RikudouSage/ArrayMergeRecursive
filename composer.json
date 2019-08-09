@@ -1,0 +1,19 @@
+{
+    "name": "rikudou/array-merge-recursive",
+    "description": "Replacement of built-in array_merge_recursive function that doesn't add values to array but replaces them",
+    "type": "library",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Dominik Chrastecky",
+            "email": "dominik@chrastecky.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "files": [
+            "src/array_merge_recursive.php"
+        ]
+    }
+}
