@@ -53,7 +53,7 @@ $array2 = [
     'test' => 'test2'
 ];
 
-$result = array_merge_recursive($array1, $array2);
+$result = array_merge($array1, $array2);
 
 // $result = 
 // array(1) {
