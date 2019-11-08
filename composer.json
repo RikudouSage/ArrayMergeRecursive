@@ -10,10 +10,23 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": "^7.0"
+    },
     "autoload": {
         "files": [
             "src/array_merge_recursive.php"
         ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4",
+        "phpstan/phpstan": "^0.11.19",
+        "php-coveralls/php-coveralls": "^2.1",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rikudou\\Tests\\ArrayMergeRecursive\\": "tests/"
+        }
     }
 }
