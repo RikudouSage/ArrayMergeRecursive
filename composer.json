@@ -28,5 +28,10 @@
         "psr-4": {
             "Rikudou\\Tests\\ArrayMergeRecursive\\": "tests/"
         }
+    },
+    "scripts": {
+        "fixer": "php-cs-fixer fix src --verbose",
+        "phpstan": "phpstan analyse --level=7 src",
+        "phpunit": "phpunit"
     }
 }
