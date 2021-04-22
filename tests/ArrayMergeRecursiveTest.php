@@ -144,21 +144,26 @@ class ArrayMergeRecursiveTest extends TestCase
                     'fourth' => [
                         'fifth' => true,
                         'sixth' => false,
-                    ]
-                ]
+                    ],
+                    'seventh' => [
+                        'eighth' => '',
+                    ],
+                ],
             ],
             [
                 'first' => 'something2',
                 'second' => [
                     'third' => [
-                        'something-else' => 'something-else'
+                        'something-else' => 'something-else',
                     ],
                     'fourth' => [
                         'fifth' => false,
                         'sixth' => true,
-                    ]
-                ]
-            ]
+                    ],
+                    'seventh' => 'some-string',
+                    'newly-added-key' => false,
+                ],
+            ],
         ];
 
         $result = custom_array_merge_recursive($arrays[0], $arrays[1]);
@@ -168,6 +173,9 @@ class ArrayMergeRecursiveTest extends TestCase
         self::assertEquals('something-else', $result['second']['third']['something-else']);
         self::assertFalse($result['second']['fourth']['fifth']);
         self::assertTrue($result['second']['fourth']['sixth']);
+        self::assertIsString($result['second']['seventh']);
+        self::assertEquals('some-string', $result['second']['seventh']);
+        self::assertArrayHasKey('newly-added-key', $result['second']);
     }
 
 }
