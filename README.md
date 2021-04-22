@@ -1,5 +1,9 @@
 # array_merge_recursive replacement
 
+[![Tests](https://github.com/RikudouSage/ArrayMergeRecursive/actions/workflows/test.yaml/badge.svg)](https://github.com/RikudouSage/ArrayMergeRecursive/actions/workflows/test.yaml)
+[![Coverage Status](https://img.shields.io/coveralls/github/RikudouSage/ArrayMergeRecursive/master.svg)](https://coveralls.io/github/RikudouSage/ArrayMergeRecursive?branch=master)
+[![Download](https://img.shields.io/packagist/dt/rikudou/array-merge-recursive.svg)](https://packagist.org/packages/rikudou/array-merge-recursive)
+
 ## Installation
 
 `composer require rikudou/array-merge-recursive`

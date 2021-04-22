@@ -2,7 +2,14 @@
 
 namespace Rikudou\ArrayMergeRecursive;
 
-function array_merge_recursive(array $array1, array $array2, array ...$arrays)
+/**
+ * @param array<mixed> $array1
+ * @param array<mixed> $array2
+ * @param array<mixed> ...$arrays
+ *
+ * @return array<mixed>
+ */
+function array_merge_recursive(array $array1, array $array2, array ...$arrays): array
 {
     // where is the array spread operator when you need it?
     array_unshift($arrays, $array2);
