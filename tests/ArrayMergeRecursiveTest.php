@@ -134,4 +134,40 @@ class ArrayMergeRecursiveTest extends TestCase
         );
     }
 
+    public function testMultiDimensionalArrays()
+    {
+        $arrays = [
+            [
+                'first' => 'something',
+                'second' => [
+                    'third' => 'something-else',
+                    'fourth' => [
+                        'fifth' => true,
+                        'sixth' => false,
+                    ]
+                ]
+            ],
+            [
+                'first' => 'something2',
+                'second' => [
+                    'third' => [
+                        'something-else' => 'something-else'
+                    ],
+                    'fourth' => [
+                        'fifth' => false,
+                        'sixth' => true,
+                    ]
+                ]
+            ]
+        ];
+
+        $result = custom_array_merge_recursive($arrays[0], $arrays[1]);
+        self::assertEquals('something2', $result['first']);
+        self::assertIsArray($result['second']['third']);
+        self::assertArrayHasKey('something-else', $result['second']['third']);
+        self::assertEquals('something-else', $result['second']['third']['something-else']);
+        self::assertFalse($result['second']['fourth']['fifth']);
+        self::assertTrue($result['second']['fourth']['sixth']);
+    }
+
 }
