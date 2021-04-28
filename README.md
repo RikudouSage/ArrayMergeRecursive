@@ -1,5 +1,6 @@
 # array_merge_recursive replacement
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8807e12a330745af9c07ec5c91961f27)](https://app.codacy.com/gh/RikudouSage/ArrayMergeRecursive?utm_source=github.com&utm_medium=referral&utm_content=RikudouSage/ArrayMergeRecursive&utm_campaign=Badge_Grade_Settings)
 [![Tests](https://github.com/RikudouSage/ArrayMergeRecursive/actions/workflows/test.yaml/badge.svg)](https://github.com/RikudouSage/ArrayMergeRecursive/actions/workflows/test.yaml)
 [![Coverage Status](https://img.shields.io/coveralls/github/RikudouSage/ArrayMergeRecursive/master.svg)](https://coveralls.io/github/RikudouSage/ArrayMergeRecursive?branch=master)
 [![Download](https://img.shields.io/packagist/dt/rikudou/array-merge-recursive.svg)](https://packagist.org/packages/rikudou/array-merge-recursive)
